@@ -27,9 +27,6 @@ export async function runMatch(formData: FormData) {
   };
 
   const communities = await fetchCommunityMatchData(priorities.closeToCommunityId);
-  // TEMP DIAGNOSTIC -- remove after confirming school scores
-  const schoolSample = communities.slice(0, 5).map(c => `${c.id}:${c.schoolScore}`);
-  console.log("[DIAG] school scores sample:", schoolSample.join(", "));
   const results = scoreCommunities(priorities, communities);
   const top = results.slice(0, 10);
 
