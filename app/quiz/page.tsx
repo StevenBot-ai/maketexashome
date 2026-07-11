@@ -1,6 +1,7 @@
 import { SliderQuestion } from "../../components/quiz/slider-question";
 import { CommunityPicker } from "../../components/quiz/community-picker";
 import { fetchCommunityOptions } from "../../lib/matching/community-data";
+import { AffiliatePromo } from "../../components/shared/affiliate-promo";
 import { runMatch } from "../actions";
 
 export const dynamic = "force-dynamic";
@@ -10,8 +11,8 @@ export default async function QuizPage() {
 
   return (
     <main className="max-w-xl mx-auto py-12 px-4">
-      <h1 className="text-3xl font-bold mb-2">A few questions, no pressure.</h1>
-      <p className="text-gray-600 mb-8">
+      <h1 className="text-3xl font-bold mb-2 text-brand-text">A few questions, no pressure.</h1>
+      <p className="text-brand-muted mb-8">
         Here&apos;s what that really looks like day-to-day: answer these, and
         we&apos;ll build you a real shortlist of Texas communities that fit.
       </p>
@@ -49,11 +50,20 @@ export default async function QuizPage() {
         <CommunityPicker options={communityOptions} />
         <button
           type="submit"
-          className="w-full bg-green-700 text-white rounded p-3 font-semibold"
+          className="w-full bg-brand-accent text-white rounded p-3 font-semibold hover:bg-brand-accent-hover"
         >
           Get my shortlist
         </button>
       </form>
+      <AffiliatePromo />
+      <footer className="mt-10 border-t border-brand-border pt-6 text-center text-xs text-brand-muted">
+        <p>
+          &copy; 2026 MakeTexasHome&trade;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/legal/terms" className="underline hover:text-brand-text">Terms of Service</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/legal/privacy" className="underline hover:text-brand-text">Privacy Policy</a>
+        </p>
+      </footer>
     </main>
   );
 }
