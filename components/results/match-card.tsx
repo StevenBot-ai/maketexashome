@@ -41,12 +41,12 @@ export function MatchCard({
         <h2 className="text-xl font-bold">
           #{rank} {match.name}
         </h2>
-        <span className="text-lg font-semibold text-green-700">
+        <span className="text-lg font-semibold text-brand-accent">
           {Math.round(match.score * 100)}% match
         </span>
       </div>
       {match.tagline && (
-        <p className="mt-3 rounded-md bg-amber-50 px-4 py-2 text-center text-lg font-bold text-green-800">
+        <p className="mt-3 rounded-md bg-brand-cream px-4 py-2 text-center text-lg font-bold text-brand-accent">
           {match.tagline}
         </p>
       )}
@@ -67,7 +67,7 @@ export function MatchCard({
       {match.publicationDomain && (
         <a
           href={`https://${match.publicationDomain}`}
-          className="mt-3 inline-block text-sm text-green-700 underline"
+          className="mt-3 inline-block text-sm text-brand-accent underline"
         >
           {`Subscribe to ${match.name} Shoutouts™`}
         </a>

@@ -28,7 +28,7 @@ export function CommunityMapToggle({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="text-sm text-green-700 underline"
+        className="text-sm text-brand-accent underline"
       >
         {open ? "Hide map" : "Where is this?"}
       </button>
