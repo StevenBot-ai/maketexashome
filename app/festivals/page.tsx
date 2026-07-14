@@ -64,7 +64,8 @@ export default async function FestivalsPage({
   searchParams: Promise<{ month?: string; category?: string }>;
 }) {
   const params = await searchParams;
-  const monthNum = params.month ? parseInt(params.month, 10) : undefined;
+  const parsed = params.month ? parseInt(params.month, 10) : NaN;
+  const monthNum = Number.isInteger(parsed) ? parsed : undefined;
   const categoryFilter = params.category;
 
   const festivals = await fetchFestivals({

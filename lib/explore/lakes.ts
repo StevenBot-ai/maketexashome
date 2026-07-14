@@ -39,6 +39,5 @@ export async function fetchLakeCounties(): Promise<string[]> {
     .not("county", "is", null)
     .order("county");
   if (error) throw error;
-  const counties = [...new Set((data ?? []).map((r) => r.county as string))];
-  return counties.sort();
+  return [...new Set((data ?? []).map((r) => r.county as string))];
 }
