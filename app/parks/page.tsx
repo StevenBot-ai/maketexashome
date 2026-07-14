@@ -94,7 +94,7 @@ export default async function ParksPage({
       {/* Nav */}
       <nav className="flex items-center gap-4 mb-8 text-sm">
         <Link href="/" className="font-bold text-brand-text hover:text-brand-accent">
-          MakeTexasHome&#8482;
+          MakeTexasHome™
         </Link>
         <span className="text-brand-muted">|</span>
         <Link href="/lakes" className="text-brand-muted hover:text-brand-accent">Lakes</Link>
