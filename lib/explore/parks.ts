@@ -47,7 +47,6 @@ export const PARK_TYPE_FILTER_OPTIONS = [
 // Returns the park_type codes that match a given human-readable label.
 function codesForLabel(label: string): string[] {
   if (label === "Other") {
-    const known = new Set(Object.keys(PARK_TYPE_LABELS));
     // "Other" means any code not in the map -- handled via .not() in the query
     return [];
   }
