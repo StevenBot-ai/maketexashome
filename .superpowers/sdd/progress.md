@@ -1,19 +1,22 @@
-# SDD Progress Ledger -- MakeTexasHome Phase 2 Schools Scoring
+# SDD Progress Ledger -- MakeTexasHome Explore Content Pages
 
-Plan: seis/docs/superpowers/plans/2026-07-07-maketexashome-phase2-schools.md
-Branch: main (working directly on main per project convention)
-Started: 2026-07-07
-Base commit: 990222a
+Plan: docs/superpowers/plans/2026-07-14-explore-content-pages.md
+Branch: main
+Started: 2026-07-14
+Base commit: 797a79e
 
 ## Task Status
 
-- [ ] Task 1: Add test script + new scoring tests
-- [ ] Task 2: Wire real school data into fetchCommunityMatchData
-- [ ] Task 3: Build verification + manual smoke test
+- [ ] Task 1: Data layer -- lakes
+- [ ] Task 2: Data layer -- parks
+- [x] Task 3: Data layer -- festivals
+- [ ] Task 4: /lakes page
+- [ ] Task 5: /parks page
+- [ ] Task 6: /festivals page
+- [ ] Task 7: Update landing page and all footers
 
 ## Completed Tasks
 
-Task 1: complete (commit 608ffe6, review clean -- 9 tests pass, brief had wrong baseline count of 6 vs actual 7)
-Task 2: complete (commit e935045, review clean -- Minor: two ! assertions on derived local var, both in brief verbatim, logically safe)
-Task 3: complete (commit d7ed4f6 in seis repo, build clean, tsc clean, browser smoke test not automated)
-Final whole-branch review: APPROVED (opus) -- no Critical/Important. Minors: ! on .find() in tests (allowed carve-out), ?? null belt-and-suspenders, single-community minMaxNormalize returns 0.5 (pre-existing behavior)
+Task 1: complete (commits 797a79e..cc23d93, review clean)
+Task 2: complete (commits cc23d93..3935df7, review clean after minor fix)
+Task 3: complete (commit c98e0a2, typecheck clean)
