@@ -13,6 +13,7 @@ export function CategorySelect({
   const router = useRouter();
   return (
     <select
+      key={selected ?? ""}
       defaultValue={selected ?? ""}
       onChange={(e) => {
         const cat = e.target.value;
