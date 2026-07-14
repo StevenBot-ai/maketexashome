@@ -31,6 +31,20 @@ export default function TermsPage() {
       <Link href="/" className="mt-6 inline-block text-brand-accent underline text-sm">
         &larr; Back to home
       </Link>
+      <footer className="mt-10 border-t border-brand-border pt-6 text-center text-xs text-brand-muted">
+        <p>
+          &copy; 2026 MakeTexasHome&trade;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/lakes" className="underline hover:text-brand-text">Lakes</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/parks" className="underline hover:text-brand-text">Parks</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/festivals" className="underline hover:text-brand-text">Festivals</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/legal/terms" className="underline hover:text-brand-text">Terms of Service</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/legal/privacy" className="underline hover:text-brand-text">Privacy Policy</a>
+        </p>
+      </footer>
     </main>
   );
 }

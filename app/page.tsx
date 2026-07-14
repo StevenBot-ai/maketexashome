@@ -25,9 +25,43 @@ export default function Home() {
       >
         Get my shortlist
       </Link>
+
+      {/* Explore Texas strip */}
+      <div className="mt-12">
+        <p className="text-xs font-semibold uppercase tracking-widest text-brand-muted mb-3">
+          Explore Texas
+        </p>
+        <div className="flex gap-4">
+          <Link
+            href="/lakes"
+            className="rounded-full border border-brand-border px-5 py-2 text-sm text-brand-muted hover:text-brand-text hover:border-brand-text"
+          >
+            Lakes
+          </Link>
+          <Link
+            href="/parks"
+            className="rounded-full border border-brand-border px-5 py-2 text-sm text-brand-muted hover:text-brand-text hover:border-brand-text"
+          >
+            Parks
+          </Link>
+          <Link
+            href="/festivals"
+            className="rounded-full border border-brand-border px-5 py-2 text-sm text-brand-muted hover:text-brand-text hover:border-brand-text"
+          >
+            Festivals
+          </Link>
+        </div>
+      </div>
+
       <footer className="mt-10 border-t border-brand-border pt-6 text-center text-xs text-brand-muted">
         <p>
           &copy; 2026 MakeTexasHome&trade;&nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/lakes" className="underline hover:text-brand-text">Lakes</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/parks" className="underline hover:text-brand-text">Parks</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
+          <a href="/festivals" className="underline hover:text-brand-text">Festivals</a>
+          &nbsp;&nbsp;&middot;&nbsp;&nbsp;
           <a href="/legal/terms" className="underline hover:text-brand-text">Terms of Service</a>
           &nbsp;&nbsp;&middot;&nbsp;&nbsp;
           <a href="/legal/privacy" className="underline hover:text-brand-text">Privacy Policy</a>
